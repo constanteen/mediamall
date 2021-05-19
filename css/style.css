@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn {
+        @apply px-8 py-3 font-medium md:mr-5 tracking-wider text-sm lg:mr-5 uppercase rounded-lg bg-blue-500 text-white my-4 hover:bg-blue-400 shadow-lg;
+    }
+}
+@layer utilities {
+    html, body{
+        font-family: 'Poppins', sans-serif;
+    }
+    .title::before{
+        content: '';
+        display: inline-block;
+        background-color: #f36657;
+        width: 27px;
+        height: 2px;
+        margin-right: 10px;
+    }
+    .title::after{
+        content: '';
+        display: inline-block;
+        background-color: #f36657;
+        width: 27px;
+        height: 2px;
+        margin-left: 10px;
+    }
+}
