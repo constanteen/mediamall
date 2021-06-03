@@ -1,18 +1,23 @@
 {
-  "name": "media-mall",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "mediamall",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "dev": "vite"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "dependencies": {
+    "next": "10.2.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "sass": "^1.33.0"
+  },
   "devDependencies": {
+    "@types/react": "17.0.6",
     "autoprefixer": "^10.2.5",
-    "postcss": "^8.2.15",
+    "postcss": "^8.3.0",
     "tailwindcss": "^2.1.2",
-    "vite": "^2.2.4"
+    "typescript": "4.2.4"
   }
 }
