@@ -5,7 +5,7 @@ interface IProps {
 }
 
 export default function Layout({ children }: IProps): ReactElement {
-	const [navState, setNavState] = useState(false);
+	const [navState, setNavState] = useState(true);
 	return (
 		<>
 			<nav className="md:px-16 md:flex md:items-center md:justify-between p-3 border-b-2 pb-0 shadow-sm md:pb-4">
@@ -44,10 +44,64 @@ export default function Layout({ children }: IProps): ReactElement {
 						</svg>
 					</a>
 				</div>
+				<div className="hidden md:block md:w-9/12 md:flex md:justify-between">
+					<ul className="list-reset md:flex md:items-center">
+						<li className="md:ml-4">
+							<Link href="/">
+								<a
+									className="block no-underline  py-2 text-grey-darkest hover:text-blue-600 md:border-none md:p-0"
+								>
+									Home
+								</a>
+							</Link>
+						</li>
+						<li className="md:ml-4">
+							<Link href="/about">
+								<a
+									className="border-t block no-underline hover:text-blue-600 py-2 text-grey-darkest md:border-none md:p-0"
+								>
+									About
+								</a>
+							</Link>
+						</li>
+						<li className="md:ml-4">
+							<Link href="/academy">
+								<a
+									className="border-t block no-underline  hover:text-blue-600 py-2 text-grey-darkest  md:border-none md:p-0"
+								>
+									Academy
+								</a>
+							</Link>
+						</li>
+						<li className="md:ml-4">
+							<Link href="/client">
+								<a
+									className="border-t block no-underline hover:text-blue-600 py-2 text-grey-darkest md:border-none md:p-0"
+								>
+									Client
+								</a>
+							</Link>
+						</li>
+						<li className="md:ml-4">
+							<Link href="/face-of-eket">
+								<a
+									className="border-t block no-underline py-2 text-grey-darkest hover:text-blue-600 md:border-none md:p-0"
+								>
+									Face Of Eket
+								</a>
+							</Link>
+						</li>
+					</ul>
+					<div>
+						<ul>
+							<li>
+								<a href="tel:+234 815 5448 000">+234 815 5448 000</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 				{/* end logo text or image */}
-				<div
-					className={navState ? "md:block md:w-9/12 md:flex md:justify-between" : 'hidden'}
-				>
+				<div className={navState ? "hidden" : "md:block md:flex md:justify-between"}>
 					<ul className="list-reset md:flex md:items-center">
 						<li className="md:ml-4">
 							<Link href="/">

@@ -1,4 +1,6 @@
 import Head from 'next/head';
+import FaceOfEketSection from "../src/components/FaceOfEketSection";
+import ServicesSection from "../src/components/ServicesSection";
 
 export default function Home() {
   return (
@@ -22,84 +24,7 @@ export default function Home() {
           </div>
         </div>
         <div className="md:mx-16 lg:mx-16 mx-4">
-          <div className="text-center py-9">
-            <h6 className="text-red-500 font-medium title">Services</h6>
-            <h3 className="font-bold text-4xl text-gray-800">What We Do</h3>
-          </div>
-          <div className="grid md:grid-cols-3 grid-cols-1 gap-6 my-8">
-            <div className="border-2 p-4 col-span-1">
-              <div className="md:flex grid lg:flex justify-between items-center">
-                <img src="/images/ux.png" alt="" className="md:order-1 lg:order-1 order-2 w-24" />
-                <h4 className="text-4xl text-gray-200 font-bold md:order-2 lg:order-2 order-1 mb-4">01</h4>
-              </div>
-              <h4 className="text-2xl font-bold py-3.5 text-gray-800">Photography</h4>
-              <div className="text-gray-500">
-                <p className="mb-3">Mobile App, Website</p>
-                <p>Lorem ipsum dolor sit amet, consec tet ur adipiscing elit. Accumsan sed faucibu s faucibus augue.
-                  Cras ut.</p>
-              </div>
-            </div>
-            <div className="border-2 p-4 col-span-1">
-              <div className="md:flex grid lg:flex justify-between items-center">
-                <img src="/images/remote.png" alt="" className="md:order-1 lg:order-1 order-2 w-24" />
-                  <h4 className="text-4xl text-gray-200 font-bold md:order-2 lg:order-2 order-1 mb-4">02</h4>
-              </div>
-              <h4 className="text-2xl font-bold py-3.5 text-gray-800">Videography</h4>
-              <div className="text-gray-500">
-                <p className="mb-3">Mobile App, Website</p>
-                <p>Lorem ipsum dolor sit amet, consec tet ur adipiscing elit. Accumsan sed faucibu s faucibus augue.
-                  Cras ut.</p>
-              </div>
-            </div>
-            <div className="border-2 p-4 col-span-1">
-              <div className="md:flex grid lg:flex justify-between items-center">
-                <img src="/images/graphics-design.png" alt="" className="md:order-1 lg:order-1 order-2 w-24" />
-                <h4 className="text-4xl text-gray-200 font-bold md:order-2 lg:order-2 order-1 mb-4">03</h4>
-              </div>
-              <h4 className="text-2xl font-bold py-3.5 text-gray-800">Graphic Design</h4>
-              <div className="text-gray-500">
-                <p className="mb-3">Mobile App, Website</p>
-                <p>Lorem ipsum dolor sit amet, consec tet ur adipiscing elit. Accumsan sed faucibu s faucibus augue.
-                  Cras ut.</p>
-              </div>
-            </div>
-            <div className="border-2 p-4 col-span-1">
-              <div className="md:flex grid lg:flex justify-between items-center">
-                <img src="/images/billboard.png" alt="" className="md:order-1 lg:order-1 order-2 w-24" />
-                <h4 className="text-4xl text-gray-200 font-bold md:order-2 lg:order-2 order-1 mb-4">04</h4>
-              </div>
-              <h4 className="text-2xl font-bold py-3.5 text-gray-800">Ads/Billboards</h4>
-              <div className="text-gray-500">
-                <p className="mb-3">Mobile App, Website</p>
-                <p>Lorem ipsum dolor sit amet, consec tet ur adipiscing elit. Accumsan sed faucibu s faucibus augue.
-                  Cras ut.</p>
-              </div>
-            </div>
-            <div className="border-2 p-4 col-span-1">
-              <div className="md:flex grid lg:flex justify-between items-center">
-                <img src="/images/print.png" alt="" className="md:order-1 lg:order-1 order-2 w-24" />
-                <h4 className="text-4xl text-gray-200 font-bold md:order-2 lg:order-2 order-1 mb-4">05</h4>
-              </div>
-              <h4 className="text-2xl font-bold py-3.5 text-gray-800">Prints</h4>
-              <div className="text-gray-500">
-                <p className="mb-3">Mobile App, Website</p>
-                <p>Lorem ipsum dolor sit amet, consec tet ur adipiscing elit. Accumsan sed faucibu s faucibus augue.
-                  Cras ut.</p>
-              </div>
-            </div>
-            <div className="border-2 p-4 col-span-1">
-              <div className="md:flex grid lg:flex justify-between items-center">
-                <img src="/images/format.png" alt="" className="md:order-1 lg:order-1 order-2 w-24" />
-                <h4 className="text-4xl text-gray-200 font-bold md:order-2 lg:order-2 order-1 mb-4">06</h4>
-              </div>
-              <h4 className="text-2xl font-bold py-3.5 text-gray-800">Large Formats</h4>
-              <div className="text-gray-500">
-                <p className="mb-3">Mobile App, Website</p>
-                <p>Lorem ipsum dolor sit amet, consec tet ur adipiscing elit. Accumsan sed faucibu s faucibus augue.
-                  Cras ut.</p>
-              </div>
-            </div>
-          </div>
+          <ServicesSection />
         </div>
         <div className="bg-gray-100 p-4">
           <div
@@ -122,20 +47,7 @@ export default function Home() {
           </div>
         </div>
         <div className="lg:grid md:grid-cols-5 grid-cols-2 gap-8 md:p-16 lg:p-16 p-4">
-          <div className="col-span-3">
-          </div>
-          <div className="col-span-2">
-            <h6 className="text-red-500 font-medium text-center py-5 title">Recent Jobs</h6>
-            <img src="/images/queen.png" alt="" className="" />
-              <div className="mb-3">
-                <h4 className="text-2xl font-bold py-4">Sediong Ukoka</h4>
-                <p>The best thing was learning from people that cared enough to go beyond their means to guarantee you
-                  learn.</p>
-              </div>
-              <div className="mt-6">
-                <a className="btn" href="#">View More</a>
-              </div>
-          </div>
+          <FaceOfEketSection />
         </div>
         <div
           className="lg:my-20 md:my-20 my-6 lg:p-16 md:p-16 p-4 md:grid lg:grid grid-cols-3 lg:mx-auto md:mx-auto lg:w-3/4 md:w-3/4 text-indigo-50 justify-between items-center lg:gap-8 md:gap-8"
@@ -153,7 +65,7 @@ export default function Home() {
         </div>
         <div>
           <div className="text-center pb-4 md:pb-9 lg:pb-9">
-            <h6 className="text-red-500 font-medium title">Recent Jobs</h6>
+            <h6 className="text-red-500 font-medium title">Gallery</h6>
             <h3 className="font-bold text-4xl">The Gallery</h3>
           </div>
           <div className="bg-gray-100 my-8 p-4 lg:p-16 md:p-16">
