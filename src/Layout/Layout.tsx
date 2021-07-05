@@ -56,7 +56,7 @@ export default function Layout({ children }: IProps): ReactElement {
 							</Link>
 						</li>
 						<li className="md:ml-4">
-							<Link href="/about">
+							<Link href="#">
 								<a
 									className="border-t block no-underline hover:text-blue-600 py-2 text-grey-darkest md:border-none md:p-0"
 								>
@@ -65,7 +65,7 @@ export default function Layout({ children }: IProps): ReactElement {
 							</Link>
 						</li>
 						<li className="md:ml-4">
-							<Link href="/academy">
+							<Link href="#">
 								<a
 									className="border-t block no-underline  hover:text-blue-600 py-2 text-grey-darkest  md:border-none md:p-0"
 								>
@@ -74,7 +74,7 @@ export default function Layout({ children }: IProps): ReactElement {
 							</Link>
 						</li>
 						<li className="md:ml-4">
-							<Link href="/client">
+							<Link href="#">
 								<a
 									className="border-t block no-underline hover:text-blue-600 py-2 text-grey-darkest md:border-none md:p-0"
 								>
@@ -113,7 +113,7 @@ export default function Layout({ children }: IProps): ReactElement {
 							</Link>
 						</li>
 						<li className="md:ml-4">
-							<Link href="/about">
+							<Link href="#">
 								<a
 									className="border-t block no-underline hover:text-blue-600 py-2 text-grey-darkest md:border-none md:p-0"
 								>
@@ -122,7 +122,7 @@ export default function Layout({ children }: IProps): ReactElement {
 							</Link>
 						</li>
 						<li className="md:ml-4">
-							<Link href="/academy">
+							<Link href="#">
 							<a
 								className="border-t block no-underline  hover:text-blue-600 py-2 text-grey-darkest  md:border-none md:p-0"
 							>
@@ -131,7 +131,7 @@ export default function Layout({ children }: IProps): ReactElement {
 							</Link>
 						</li>
 						<li className="md:ml-4">
-							<Link href="/client">
+							<Link href="#">
 								<a
 									className="border-t block no-underline hover:text-blue-600 py-2 text-grey-darkest md:border-none md:p-0"
 								>
