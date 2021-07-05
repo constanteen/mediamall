@@ -16,8 +16,8 @@ export default function Home() {
         <div className="md:flex max-w-full min-w-full">
           <div className="md:w-3/4 md:pt-24 lg:pt-24 md:px-0 lg:px-0 px-8">
             <h2
-              className="lg:mt-5 md:mt-5 mt-6 md:pl-16  md:leading-normal lg:leading-normal font-bold text-4xl md:text-6xl lg:text-6xl text-gray-800">Everything <span
-              className="bg-blue-300">media</span> in one <span className="bg-blue-300">place</span></h2>
+              className="lg:mt-5 md:mt-5 mt-6 md:pl-16  md:leading-normal lg:leading-normal font-extrabold text-4xl md:text-6xl lg:text-6xl text-gray-800">Everything <span
+              className="bg-blue-300">media</span> <br/>   in one <span className="bg-blue-300">place</span></h2>
           </div>
           <div className="md:w-3/4 lg:w-3/4 md:px-0 lg:px-0 lg:py-16 md:py-14 px-8 py-16">
             <img src="/images/drone.png" alt="drone landing" />
